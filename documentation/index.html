@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angular-7-boilerplate documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">angular-7-boilerplate documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="angular-7-boilerplate">Angular 7 Boilerplate</h1>
+<ol>
+<li>Go to project folder and install dependencies:</li>
+</ol>
+<div><pre class="line-numbers"><code class="language-bash">npm install</code></pre></div><ol start="2">
+<li>Launch development server, and open <code>localhost:4200</code> in your browser:</li>
+</ol>
+<div><pre class="line-numbers"><code class="language-bash">npm start</code></pre></div><h2 id="project-structure">Project structure</h2>
+<div><pre class="line-numbers"><code class="language-none">dist/                        compiled version
+documentation/               generated document source
+e2e/                         end-to-end tests
+src/                         project source code
+|- app/                      app components
+|  |- core/                  core module (singleton services and single-use components)
+|  |- shared/                shared module  (common components, directives and pipes)
+|  |- app.component.*        app root component (shell)
+|  |- app.module.ts          app root module definition
+|  |- app.routing.ts         app routes
+|  +- ...                    additional modules and components
+|- assets/                   app assets (images, fonts, sounds...)
+|- environments/             values for various build environments
+|- index.html                html entry point
+|- styles.css                global style entry point
+|- main.ts                   app entry point
+|- polyfills.ts              polyfills needed by Angular
++- test.ts                   unit tests entry point</code></pre></div><h2 id="main-tasks">Main tasks</h2>
+<p>Task automation is based on <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a>.</p>
+<table class="table table-bordered compodoc-table">
+<thead>
+<tr>
+<th>Tasks</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>npm start</td>
+<td>Run development server on <code>http://localhost:4200/</code></td>
+</tr>
+<tr>
+<td>npm run build:dev</td>
+<td>Lint code and build app for development env in <code>dist/</code> folder</td>
+</tr>
+<tr>
+<td>npm run build:prod</td>
+<td>Lint code and build app for production env in <code>dist/</code> folder</td>
+</tr>
+<tr>
+<td>npm run build:local</td>
+<td>Lint code and build app for local env in <code>dist/</code> folder</td>
+</tr>
+<tr>
+<td>npm run pwa:build:dev</td>
+<td>Lint code and build PWA app for development env in <code>dist/</code> folder</td>
+</tr>
+<tr>
+<td>npm run pwa:build:prod</td>
+<td>Lint code and build PWA app for production env in <code>dist/</code> folder</td>
+</tr>
+<tr>
+<td>npm run pwa:build:local</td>
+<td>Lint code and build PWA app for local env in <code>dist/</code> folder</td>
+</tr>
+<tr>
+<td>npm run lint</td>
+<td>Lint code</td>
+</tr>
+<tr>
+<td>npm run compodoc:gen</td>
+<td>Generate Project document in ./documentation folder</td>
+</tr>
+<tr>
+<td>npm run compodoc:serve</td>
+<td>You can access ./documentation folder via <code>http://localhost:8080</code></td>
+</tr>
+<tr>
+<td>npm run compodoc</td>
+<td>It generate latest ./documentation and you can access via <code>http://localhost:8080</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="development-server">Development server</h3>
+<p>Run <code>npm start</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change
+any of the source files.</p>
+<h3 id="code-scaffolding">Code scaffolding</h3>
+<p>Run <code>npm run generate -- component &lt;name&gt;</code> to generate a new component. You can also use
+<code>npm run generate -- directive|pipe|service|class|module</code>.</p>
+<p>If you have installed <a href="https://github.com/angular/angular-cli">angular-cli</a> globally with <code>npm install -g @angular/cli</code>,
+you can also use the command <code>ng generate</code> directly.</p>
+<h3 id="pwa-service-worker-support">PWA Service worker support</h3>
+<p>To enalbe service worker go to <code>src/main.ts</code> and uncomment service worker code.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <script src="./js/menu-wc.js"></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
