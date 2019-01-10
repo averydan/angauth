@@ -2,5 +2,5 @@ export const environment = {
   env: 'LOCAL',
   production: false,
   serverBaseUrl: 'http://localhost',
-  serverUrl: 'http://localhost/v1'
+  serverUrl: 'https://localhost:44311'
 };

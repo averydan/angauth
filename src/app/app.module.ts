@@ -11,6 +11,14 @@ import { AppRoutes } from '@app/app.routing';
 import { AppComponent } from '@app/app.component';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
+import {
+  MatCardModule,
+  MatIconModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +30,13 @@ import { SharedModule } from '@app/shared';
     NgbModule.forRoot(),
     RouterModule.forRoot(AppRoutes),
     CoreModule,
-    SharedModule
+    SharedModule,
+    MatCardModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   bootstrap: [AppComponent]
 })

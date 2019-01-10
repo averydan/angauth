@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>angular-7-boilerplate documentation</title>
+        <title>red-beard-beats-f documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">angular-7-boilerplate documentation</a>
+            <a href="../" class="navbar-brand">red-beard-beats-f documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -706,7 +706,7 @@ export class AuthenticationService {
   login(
     payload: Authentication.LoginPayload
   ): Observable&lt;Authentication.Credentials&gt; {
-    return this.httpClient.post(&#x27;/login&#x27;, payload).pipe(
+    return this.httpClient.post(&#x27;/api/Auth/Login&#x27;, payload).pipe(
       map((body: Authentication.Credentials) &#x3D;&gt; {
         this.setCredentials(body);
         return body;
@@ -717,7 +717,7 @@ export class AuthenticationService {
   signup(
     payload: Authentication.SignupPayload
   ): Observable&lt;Authentication.User&gt; {
-    return this.httpClient.post(&#x27;/signup&#x27;, payload).pipe(
+    return this.httpClient.post(&#x27;/api/Auth/Register&#x27;, payload).pipe(
       map((body: Authentication.User) &#x3D;&gt; {
         return body;
       })

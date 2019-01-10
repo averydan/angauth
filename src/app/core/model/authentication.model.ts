@@ -5,12 +5,9 @@ declare namespace Authentication {
   }
 
   export interface SignupPayload {
-    firstName: string;
-    lastName: string;
+    username: string;
     email: string;
-    phone: string;
     password: string;
-    cPassword: string;
   }
 
   export interface User {
