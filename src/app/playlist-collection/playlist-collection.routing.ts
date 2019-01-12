@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
 import { AuthenticationGuard } from '@app/core';
 
-import { PlaylistCollectionIndexComponent } from '@app/playlist-collection/playlist-collection-index/playlist-collection-index.component';
-import { PlaylistCollectionCreateComponent } from './playlist-collection-create/playlist-collection-create.component';
-import { PlaylistCollectionDetailComponent } from './playlist-collection-detail/playlist-collection-detail.component';
-import { PlaylistCollectionUpdateComponent } from './playlist-collection-update/playlist-collection-update.component';
-import { PlaylistCollectionDeleteComponent } from './playlist-collection-delete/playlist-collection-delete.component';
+import { PlaylistCollectionIndexComponent } from '@app/playlist-collection/playlist-collection-index/pc-index.component';
+import { PlaylistCollectionCreateComponent } from './playlist-collection-create/pc-create.component';
+import { PlaylistCollectionDetailComponent } from './playlist-collection-detail/pc-detail.component';
+import { PlaylistCollectionUpdateComponent } from './playlist-collection-update/pc-update.component';
+import { PlaylistCollectionDeleteComponent } from './playlist-collection-delete/pc-delete.component';
 
 export const PlaylistCollectionRoutes: Routes = [
   {
     path: '',
-    canActivate: [AuthenticationGuard],
+    // canActivate: [AuthenticationGuard],
     children: [
       // Playlist Collection Index
       {
