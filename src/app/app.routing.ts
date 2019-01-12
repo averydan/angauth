@@ -18,6 +18,18 @@ export const AppRoutes: Routes = [
       }
     ]
   },
+  // Playlist Collection Route
+  {
+    path: '',
+    component: FullComponent,
+    children: [
+      {
+        path: '',
+        loadChildren:
+          './playlist-collection/playlist-collection.module#PlaylistCollectionModule'
+      }
+    ]
+  },
   {
     path: '',
     component: BlankComponent,
