@@ -1,1 +1,52 @@
-<p>Dashboard!</p>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="!(isHandset$ | async)">
+      <mat-toolbar><a href="dashboard">Home</a></mat-toolbar>
+      <mat-nav-list>
+        <a>Your Treasure</a>
+        <a mat-list-item href="playlistcollectionindex">Playlist</a>
+        <a mat-list-item href="#">Song</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr />
+        <a mat-list-item href="playlistcollectioncreate">Add New Playlist</a>
+        <a mat-list-item href="playlistcollectioncreate">Add New Song</a>
+        <a mat-list-item href="playlistcollectioncreate">Add Song to Playlist</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="accent">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>Red Beard Beats</span>
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <h1>Welcome Aboard!</h1>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

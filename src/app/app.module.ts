@@ -17,8 +17,11 @@ import {
   MatToolbarModule,
   MatButtonModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatSidenavModule,
+  MatListModule
 } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [AppComponent],
@@ -36,7 +39,10 @@ import {
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule
   ],
   bootstrap: [AppComponent]
 })
