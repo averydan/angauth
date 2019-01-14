@@ -17,13 +17,13 @@ import {
   MatToolbarModule,
   MatButtonModule,
   MatFormFieldModule,
+  MatTableModule,
   MatInputModule,
   MatSidenavModule,
   MatListModule
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard';
-import { PlaylistcollectionService } from './services/playlistcollection.service';
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent],
@@ -39,6 +39,7 @@ import { PlaylistcollectionService } from './services/playlistcollection.service
     MatCardModule,
     MatIconModule,
     MatToolbarModule,
+    MatTableModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
@@ -46,7 +47,6 @@ import { PlaylistcollectionService } from './services/playlistcollection.service
     MatSidenavModule,
     MatListModule
   ],
-  bootstrap: [AppComponent],
-  providers: [PlaylistcollectionService]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

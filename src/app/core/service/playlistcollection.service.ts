@@ -6,7 +6,7 @@ const ApiUrl = 'https://localhost:44311';
 @Injectable({
   providedIn: 'root'
 })
-export class PlaylistcollectionService {
+export class PlaylistCollectionService {
   constructor(private _http: HttpClient) {}
 
   getPlaylists() {
