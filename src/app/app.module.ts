@@ -23,6 +23,7 @@ import {
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './dashboard';
+import { PlaylistcollectionService } from './services/playlistcollection.service';
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent],
@@ -45,6 +46,7 @@ import { DashboardComponent } from './dashboard';
     MatSidenavModule,
     MatListModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [PlaylistcollectionService]
 })
 export class AppModule {}
