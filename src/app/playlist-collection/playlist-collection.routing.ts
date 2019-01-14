@@ -14,27 +14,27 @@ export const PlaylistCollectionRoutes: Routes = [
     children: [
       // Playlist Collection Index
       {
-        path: 'playlistcollectionindex',
+        path: 'playlistcollection/index',
         component: PlaylistCollectionIndexComponent
       },
       //  Playlist Collection Create
       {
-        path: 'playlistcollectioncreate',
+        path: 'playlistcollection/create',
         component: PlaylistCollectionCreateComponent
       },
       //  Playlist Collection Detail
       {
-        path: 'playlistcollectiondetail',
+        path: 'playlistcollection/detail',
         component: PlaylistCollectionDetailComponent
       },
       //  Playlist Collection Update
       {
-        path: 'playlistcollectionupdate',
+        path: 'playlistcollection/update',
         component: PlaylistCollectionUpdateComponent
       },
       //  Playlist Collection Delete
       {
-        path: 'playlistcollectiondelete',
+        path: 'playlistcollection/delete',
         component: PlaylistCollectionDeleteComponent
       }
     ]
