@@ -9,12 +9,23 @@ export const AppRoutes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/dashboard',
+        redirectTo: '/home',
         pathMatch: 'full'
       },
       {
         path: 'dashboard',
         loadChildren: './dashboard/dashboard.module#DashboardModule'
+      }
+    ]
+  },
+  // Homepage
+  {
+    path: '',
+    component: FullComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './home/homepage.module#HomepageModule'
       }
     ]
   },
