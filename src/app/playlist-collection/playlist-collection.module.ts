@@ -3,6 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  MatTableModule,
+  MatButtonModule,
+  MatFormFieldModule,
+  MatToolbarModule,
+  MatInputModule
+} from '@angular/material';
 
 import { PlaylistCollectionRoutes } from '@app/playlist-collection/playlist-collection.routing';
 import { PlaylistCollectionIndexComponent } from '@app/playlist-collection/playlist-collection-index/pc-index.component';
@@ -16,7 +23,12 @@ import { PlaylistCollectionDeleteComponent } from '@app/playlist-collection/play
     FormsModule,
     CommonModule,
     NgbModule,
-    RouterModule.forChild(PlaylistCollectionRoutes)
+    RouterModule.forChild(PlaylistCollectionRoutes),
+    MatTableModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   declarations: [
     PlaylistCollectionIndexComponent,

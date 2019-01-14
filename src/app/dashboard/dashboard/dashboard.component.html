@@ -23,10 +23,6 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <hr />
         <a mat-list-item href="playlistcollection/create">Add New Playlist</a>
         <a mat-list-item href="playlistcollection/create">Add New Song</a>
@@ -34,9 +30,12 @@
         <br>
         <a mat-list-item href="login">Login</a>
         <a mat-list-item href="signup">Sign Up</a>
+        <br>
+        <br>
 
       </mat-nav-list>
     </mat-sidenav>
+    
     <mat-sidenav-content>
       <mat-toolbar color="accent">
         <button
@@ -49,6 +48,7 @@
         </button>
         <span>Red Beard Beats</span>
       </mat-toolbar>
-      <!-- Add Content Here -->
+      <!-- Router Allows to show content of what page we try to navigate to -->
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
